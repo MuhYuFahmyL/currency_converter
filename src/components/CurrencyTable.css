@@ -1,0 +1,96 @@
+
+h3 {
+    color: #0056b3; 
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    padding: 20px;
+    background-color: #f8f9fa; 
+    border-radius: 8px;
+  }
+  
+  marquee {
+    color: #0056b3; 
+    font-weight: bold;
+  }
+  
+  .currency-table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+  }
+  
+  .currency-table thead th {
+    text-align: center;
+    background-color: #0056b3; 
+    color: white;
+    padding: 12px;
+  }
+  
+  .currency-table tbody td {
+    padding: 12px;
+  }
+  
+  .currency-table tbody .odd-row {
+    background-color: #e9ecef;
+  }
+  
+  .currency-table tbody .even-row {
+    background-color: #f1f3f5;
+  }
+  
+  .currency-table tbody tr:hover {
+    background-color: #ced4da;
+  }
+  
+  .currency-table tbody td {
+    color: #212529;
+  }
+  
+  .spinner-border {
+    margin: 20px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .currency-table tbody td {
+      display: block;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .currency-table thead {
+      display: none;
+    }
+  
+    .currency-table tbody tr {
+      margin-bottom: 10px;
+    }
+  
+    .currency-table tbody td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      text-transform: uppercase;
+      float: left;
+      color: #0056b3;
+    }
+  
+    .currency-table tbody td:nth-of-type(1)::before {
+      content: "Mata Uang: ";
+    }
+  
+    .currency-table tbody td:nth-of-type(2)::before {
+      content: "We Buy: ";
+    }
+  
+    .currency-table tbody td:nth-of-type(3)::before {
+      content: "Exchange Rate: ";
+    }
+  
+    .currency-table tbody td:nth-of-type(4)::before {
+      content: "We Sell: ";
+    }
+  }
+  
